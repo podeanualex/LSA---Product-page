@@ -1,0 +1,561 @@
+.clear {
+    clear: both;
+}
+.galleryThumbs {
+    content: "";
+    display: table;
+    clear: both;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after {
+    content: "";
+    content: none;
+}
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    font: 14px 200 "Roboto Condensed", sans-serif;
+    background: #fff;
+}
+.wrap {
+    width: 1170px;
+    margin: 0 auto;
+}
+header {
+    padding-top: 58px;
+}
+header #logo {
+    float: left;
+    width: 171px;
+    height: 99px;
+    background: url("../assets/logo.png");
+}
+header nav {
+    float: right;
+    padding-top: 80px;
+    margin-right: 62px;
+}
+header nav ul {
+    margin: 0;
+}
+header nav ul li {
+    float: left;
+    margin: 0 16px;
+    padding: 0 0 2px 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+header nav ul li:hover {
+    box-shadow: inset 0 -0.5px 0 #525252;
+}
+header nav ul li:hover a {
+    color: #b3a49d;
+}
+header nav ul li.active {
+    box-shadow: inset 0 -0.5px 0 #525252;
+}
+header nav ul li a {
+    text-decoration: none;
+    display: block;
+    font: 200 16px "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    color: #535353;
+}
+#product {
+    margin: 51px 0;
+}
+#product .productImages {
+    float: left;
+    width: 686px;
+}
+#product .productImages #big {
+    width: 100%;
+}
+#product .productDetails {
+    float: right;
+    width: 375px;
+}
+#product .productDetails .breadcrumb {
+    font: 200 11px "Roboto Condensed", sans-serif;
+}
+#product .productDetails .breadcrumb a {
+    color: #535353;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#product .productDetails h1 {
+    font: 200 41px "Roboto Condensed", sans-serif;
+    margin: 20px 0;
+    text-transform: uppercase;
+    width: 290px;
+}
+#product .productDetails .productType {
+    font: 200 12px "Roboto Condensed", sans-serif;
+}
+#product .productDetails .productInfoBox {
+    margin: 30px 0;
+}
+#product .productDetails .productInfoBox .price {
+    float: left;
+    font: 200 19px "Roboto Condensed", sans-serif;
+}
+#product .productDetails .productInfoBox .starsAndReviews .stars {
+    float: right;
+    margin-right: 10px;
+}
+#product .productDetails .productInfoBox .starsAndReviews .stars li {
+    float: left;
+}
+#product .productDetails .productInfoBox .starsAndReviews .stars li i {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#product .productDetails .productInfoBox .starsAndReviews .stars li:last-child i {
+    color: #ddd;
+}
+#product .productDetails .productInfoBox .starsAndReviews .reviews {
+    float: right;
+}
+#product .productDetails .productInfoBox .starsAndReviews .reviews a {
+    text-decoration: none;
+    font: 200 14px "Roboto Condensed", sans-serif;
+    color: #535353;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#product .productDetails .productInfoBox .starsAndReviews .reviews a:hover {
+    color: darkgray;
+}
+#product .productDetails #addToBagForm select {
+    float: left;
+    border-radius: 0;
+    width: 168px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #bcbcbc;
+    color: #969696;
+    font: 200 14px "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    background: #fff url("../assets/selectArrow.png") 94% 45% no-repeat;
+    -webkit-appearance: none;
+    padding-left: 15px;
+}
+#product .productDetails #addToBagForm select:focus {
+    outline: 0;
+}
+#product .productDetails #addToBagForm input[type="submit"] {
+    float: right;
+    background: #343434;
+    width: 170px;
+    height: 42px;
+    line-height: 44px;
+    text-align: center;
+    font: 200 14px "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#product .productDetails #addToBagForm input[type="submit"]:hover {
+    background: #b3a49d;
+}
+#hero {
+    height: 820px;
+    width: 100%;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    margin-bottom: 85px;
+}
+#hero:hover {
+    box-shadow: inset 10px 10px 16px rgba(0, 0, 0, 0.3), inset -10px -10px 16px rgba(0, 0, 0, 0.3);
+}
+#hero .heroContent {
+    width: 292px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    margin-left: 101px;
+    padding: 174px 49px 0 49px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#hero .heroContent:hover {
+    background: white;
+}
+#hero .heroContent:hover h2 {
+    color: #b3a49d;
+}
+#hero .heroContent h3 {
+    font: 200 17px "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+#hero .heroContent h2 {
+    font: 200 29px "Roboto Condensed", sans-serif;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+#hero .heroContent p {
+    font: 200 16px "Roboto Condensed", sans-serif;
+    line-height: 30px;
+}
+#similarProducts .title {
+    text-transform: uppercase;
+}
+#similarProducts .title span {
+    font: 200 16px "Roboto Condensed", sans-serif;
+    margin-bottom: 21px;
+    display: block;
+}
+#similarProducts .title h3 {
+    font: 200 25px "Roboto Condensed", sans-serif;
+}
+#similarProducts .similarList {
+    margin: 100px auto;
+}
+#similarProducts .similarList li {
+    float: left;
+    width: 390px;
+    text-transform: uppercase;
+    margin-bottom: 85px;
+    padding-bottom: 15px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#similarProducts .similarList li:hover {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+#similarProducts .similarList li:hover .details .pName {
+    color: #b3a49d;
+}
+#similarProducts .similarList li a {
+    text-decoration: none;
+    color: #535353;
+    display: block;
+}
+#similarProducts .similarList li img {
+    display: block;
+    margin: 0 auto 51px auto;
+    width: 80%;
+}
+#similarProducts .similarList li .details {
+    max-width: 70%;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+#similarProducts .similarList li .details .pName {
+    display: block;
+    font: 200 16px "Roboto Condensed", sans-serif;
+    margin-bottom: 6px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#similarProducts .similarList li .details .pPrice {
+    display: block;
+    font: 400 16px "Roboto Condensed", sans-serif;
+}
+.galleryThumbs {
+    width: 374px;
+    display: block;
+    margin: 20px auto;
+}
+.galleryThumbs li {
+    float: left;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #bbb9ba;
+    margin-right: 28px;
+    overflow: hidden;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.galleryThumbs li:hover img {
+    -webkit-transform: scale(1.5);
+}
+.galleryThumbs li:nth-child(3) img {
+    transform: scale(3);
+    left: 20px;
+    top: -20px;
+}
+.galleryThumbs li:nth-child(3):hover img {
+    -webkit-transform: scale(1.4);
+    left: 9px;
+    top: 0;
+}
+.galleryThumbs li:nth-child(4) img {
+    transform: scale(4);
+    left: -58px;
+    top: 42px;
+}
+.galleryThumbs li:nth-child(4):hover img {
+    -webkit-transform: scale(1.4);
+    left: -9px;
+    top: 20px;
+}
+.galleryThumbs li:last-child {
+    margin-right: 0;
+}
+.galleryThumbs li img {
+    display: block;
+    position: relative;
+    width: 100%;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#accordion h2 {
+    text-transform: uppercase;
+    font: 200 16px "Roboto Condensed", sans-serif;
+    padding: 10px 0;
+}
+#accordion li {
+    position: relative;
+}
+#accordion li .content {
+    display: none;
+    opacity: 0;
+    padding: 10px;
+    font: 200 13px "Roboto Condensed", sans-serif;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+#accordion li::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+#accordion li:hover::after {
+    content: "-";
+}
+#accordion li:hover .content {
+    display: inherit;
+    opacity: 1;
+}
+/* Media query */
+
+@media (max-width: 1023px) {
+    .wrap {
+        width: 94%;
+    }
+    .productImages {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    #product .productDetails {
+        width: 90%;
+        float: none;
+        display: block;
+        margin: 3% auto;
+    }
+    #product .productImages {
+        float: none;
+        display: block;
+        margin: 5% auto;
+        width: 100%;
+    }
+    #hero .heroContent {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+    #similarProducts .similarList li {
+        width: 33%;
+    }
+}
+@media (max-width: 468px) {
+    header #logo {
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+    .galleryThumbs li {
+        width: 50%;
+        display: block;
+        margin: 4% auto !important;
+        float: none;
+    }
+    #similarProducts .similarList li {
+        width: 100%;
+    }
+    #similarProducts .similarList img {
+        background-size: 100% 100%;
+    }
+    #product .productDetails #addToBagForm select {
+        width: 100%;
+        margin: 4% auto;
+    }
+    #product .productDetails #addToBagForm input[type="submit"] {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+/* Media query */

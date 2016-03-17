@@ -1,0 +1,342 @@
+@import "functions" 
+@import "reset"
+
+*
+    margin: 0
+    padding: 0
+
+body
+    width: 100%
+    font: 14px 200 'Roboto Condensed', sans-serif
+    background: #fff
+    
+.wrap 
+    width: 1170px
+    margin: 0 auto
+    
+header
+    padding-top: 58px
+    #logo
+        float: left
+        width: 171px
+        height: 99px
+        background: url('../assets/logo.png')
+    nav
+        float: right
+        padding-top: 80px
+        margin-right: 62px
+        ul
+            margin: 0
+            li
+                float: left
+                margin: 0 16px
+                padding: 0 0 2px 0
+                @include transition(all, .4s,  ease-in-out)
+                &:hover
+                    box-shadow: inset  0 -0.5px 0 #525252
+                    a
+                        color: #b3a49d
+                &.active
+                    box-shadow: inset  0 -0.5px 0 #525252
+                a
+                    text-decoration: none
+                    display: block
+                    font: 200 16px 'Roboto Condensed', sans-serif
+                    text-transform: uppercase
+                    @include transition(all, .4s,  ease-in-out)
+                    color: $text
+                    
+#product
+    margin: 51px 0
+    .productImages
+        float: left
+        width: 686px
+        #big
+            width: 100%
+    .productDetails
+        float: right
+        width: 375px
+        .breadcrumb
+            font: 200 11px 'Roboto Condensed', sans-serif
+            a
+                color: $text
+                text-transform: uppercase
+                text-decoration: none
+        h1
+            font: 200 41px 'Roboto Condensed', sans-serif
+            margin: 20px 0
+            text-transform: uppercase
+            width: 290px
+        .productType
+            font: 200 12px 'Roboto Condensed', sans-serif
+        .productInfoBox
+            margin: 30px 0
+            .price
+                float: left
+                font: 200 19px 'Roboto Condensed', sans-serif
+            .starsAndReviews
+                .stars
+                    float: right
+                    margin-right: 10px
+                    li
+                        float: left
+                        i
+                            @include transition(all, .4s,  ease-in-out)
+                        &:last-child
+                            i
+                                color: #ddd 
+                            
+                .reviews
+                    float: right
+                    a
+                        text-decoration: none
+                        font: 200 14px 'Roboto Condensed', sans-serif
+                        color: $text
+                        @include transition(all, .4s,  ease-in-out)
+                        &:hover
+                            color: darkgray
+        #addToBagForm
+            select
+                float: left
+                border-radius: 0
+                width: 168px
+                height: 40px
+                background: #fff
+                border: 1px solid #bcbcbc
+                color: #969696
+                font: 200 14px 'Roboto Condensed', sans-serif
+                text-transform: uppercase
+                background: #fff url('../assets/selectArrow.png') 94% 45% no-repeat
+                -webkit-appearance: none
+                padding-left: 15px
+                &:focus
+                    outline: 0
+            input[type="submit"]
+                float: right
+                background: #343434
+                width: 170px
+                height: 42px
+                line-height: 44px
+                text-align: center
+                font: 200 14px 'Roboto Condensed', sans-serif
+                text-transform: uppercase
+                border: 0
+                color: #fff
+                cursor: pointer
+                @include transition(all, .4s,  ease-in-out)
+                &:hover
+                    background: #b3a49d
+        
+           
+#hero
+    height: 820px
+    width: 100%
+    @include transition(all, .8s,  ease-in-out)
+    margin-bottom: 85px
+    &:hover
+        box-shadow: inset 10px 10px 16px rgba(0,0,0, .3), inset -10px -10px 16px rgba(0,0,0, .3)
+    .heroContent
+        width: 390px-49px*2
+        height: 100%
+        background: rgba(255,255,255, .8)
+        margin-left: 101px
+        padding: 174px 49px 0 49px
+        @include transition(all, .4s,  ease-in-out)
+        &:hover
+            background: rgba(255,255,255, 1)
+            h2
+                color: #b3a49d
+        h3
+            font: 200 17px 'Roboto Condensed', sans-serif
+            text-transform: uppercase
+            margin-bottom: 18px
+        h2
+            font: 200 29px 'Roboto Condensed', sans-serif
+            @include transition(all, .4s,  ease-in-out)
+            text-transform: uppercase
+            margin-bottom: 60px
+        p
+            font: 200 16px 'Roboto Condensed', sans-serif
+            line-height: 30px
+    
+#similarProducts
+    .title   
+        text-transform: uppercase
+        span
+            font: 200 16px 'Roboto Condensed', sans-serif
+            margin-bottom: 21px
+            display: block
+        h3
+            font: 200 25px 'Roboto Condensed', sans-serif
+    .similarList
+        margin: 100px auto
+        li
+            float: left
+            width: 390px
+            text-transform: uppercase
+            margin-bottom: 85px
+            padding-bottom: 15px
+            @include transition(all, .4s,  ease-in-out)
+            &:hover
+                box-shadow: 0 2px 2px rgba(0,0,0, .2)
+                .details
+                    .pName
+                        color: #b3a49d
+            a
+                text-decoration: none
+                color: $text
+                display: block
+            img
+                display: block
+                margin: 0 auto 51px auto
+                width: 80%
+            .details
+                max-width: 70%
+                width: auto
+                display: block
+                margin: 0 auto
+                .pName
+                    display: block
+                    font: 200 16px 'Roboto Condensed', sans-serif
+                    margin-bottom: 6px
+                    @include transition(all, .4s,  ease-in-out)
+                .pPrice
+                    display: block
+                    font: 400 16px 'Roboto Condensed', sans-serif
+    
+//Global
+.galleryThumbs
+    width: 374px
+    display: block
+    margin: 20px auto
+    @extend %clearfix 
+    li
+        float: left
+        width: 70px
+        height: 70px
+        border: 1px solid #bbb9ba
+        margin-right: 28px
+        overflow: hidden
+        @include transition(all, .4s,  ease-in-out)
+        &:hover
+            img
+                -webkit-transform: scale(1.5)
+        &:nth-child(3)
+            img
+                transform: scale(3)
+                left: 20px
+                top: -20px
+            &:hover
+                img
+                    -webkit-transform: scale(1.4)
+                    left: 9px
+                    top: 0
+        &:nth-child(4)
+            img
+                transform: scale(4)
+                left: -58px
+                top: 42px
+            &:hover
+                img
+                    -webkit-transform: scale(1.4)
+                    left: -9px
+                    top: 20px
+        &:last-child
+            margin-right: 0
+        img
+            display: block
+            position: relative
+            width: 100%
+            @include transition(all, .5s,  ease-in-out)
+            
+#accordion 
+    h2
+        text-transform: uppercase
+        font: 200 16px 'Roboto Condensed', sans-serif
+        padding: 10px 0
+    li
+        position: relative
+        .content
+            display: none
+            opacity: 0
+            padding: 10px
+            font: 200 13px 'Roboto Condensed', sans-serif
+            @include transition(all, 1s,  ease-in-out)
+        &::after
+            content: "+"
+            position: absolute
+            right: 0
+            top: 5px
+        &:hover::after
+            content: "-"
+        &:hover
+            .content
+                display: inherit
+                opacity: 1
+            
+            
+            
+/* Media query */
+
+@media (max-width: 1023px)
+    .wrap
+        width: 94%
+    .productImages
+        float: none
+        display: block
+        margin: 0 auto
+    #product 
+        .productDetails
+            width: 90%
+            float: none
+            display: block
+            margin: 3% auto
+        .productImages
+            float: none
+            display: block
+            margin: 5% auto
+            width: 100%
+    #hero
+        .heroContent
+            width: 60%
+            display: block
+            margin: 0 auto
+    #similarProducts
+        .similarList
+            li
+                width: 33%
+        
+
+
+    
+@media (max-width: 468px)
+    header
+        #logo
+            display: block
+            float: none
+            margin: 0 auto
+    .galleryThumbs
+        li
+            width: 50%
+            display: block
+            margin: 4% auto!important
+            float: none
+    #similarProducts
+        .similarList
+            li
+                width: 100%
+            img
+                background-size: 100% 100%
+    #product
+        .productDetails
+            #addToBagForm
+                select
+                    width: 100%
+                    margin: 4% auto
+                input[type="submit"]
+                    width: 100%
+                    margin: 0 auto
+    
+
+/* Media query */
+
